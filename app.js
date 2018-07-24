@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 // express app
 const app = express();
 
-app.user(logger('dev'));
+app.use(logger('dev'));
 
 // parse incoming requests
 app.use(bodyParser.json());

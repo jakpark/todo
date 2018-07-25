@@ -10,7 +10,7 @@ module.exports = (sequelize, DataTypes) => {
     },
   });
 
-  Todo.associate = (models) => {
+  TodoItem.associate = (models) => {
     TodoItem.belongsTo(models.Todo, {
       foreignKey: 'todoId',
       onDelete: 'CASCADE',

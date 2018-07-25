@@ -18,6 +18,7 @@ app.use(function(req, res, next) {
   next();
 });
 
+require('./server/routes')(app);
 // catch-all route, welcome in JSON
 app.get('*', (req, res, next) => res.status(200).send({
   message: "Welcome to Express server.",

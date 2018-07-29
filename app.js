@@ -25,3 +25,5 @@ app.get('*', (req, res, next) => res.status(200).send({
 }));
 
 module.exports = app;
+
+console.log("app.js")

@@ -2,11 +2,11 @@ This is a TodoBackend implementation for a Express server + Postgres
 
 Notes:
 My local environment is Ubuntu 16.04 LTS
-Postgres 9.5.13
-pg@7.4.3
-express@4.16.3
 Node -v 8.11.3
 npm -v 5.6.0
+express@4.16.3
+Postgres 9.5.13
+pg@7.4.3
 sequelize@4.38.0
 
 
@@ -20,3 +20,16 @@ and then the postgres service needs to be reset:
 sudo systemctl restart postgresql.service
 
 NO IDEA how the flow should work on MacOS.
+
+Status:
+
+I have finished the first 2 tests on:
+
+https://www.todobackend.com/specs/index.html?http://localhost:4000
+
+GET and POST
+
+The setup for this stupid config was the longest and most frustrating thing.
+I have not committed .env to my source code but it involves a dotenv variable
+to allow my app to connect to Postgres database. Otherwise you'll find 
+migrations not working or any other way to access the server not working.

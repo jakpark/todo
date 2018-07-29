@@ -33,3 +33,14 @@ The setup for this stupid config was the longest and most frustrating thing.
 I have not committed .env to my source code but it involves a dotenv variable
 to allow my app to connect to Postgres database. Otherwise you'll find 
 migrations not working or any other way to access the server not working.
+
+OK, now I realize the env file doesn't do anything when everything is set to TRUST.
+
+That's a later problem to fix.
+
+TODO:
+☑ Get app responding to HTTP
+☑ POST api successful and returns created object
+☒ BROKEN env files for database auth
+☐
+☐

@@ -6,5 +6,5 @@ module.exports = (app) => {
   }));
 
   app.post('/', todosController.create);
-  app.delete('/', todosController.delete);
+  app.delete('/', (req, res) => res.send({}));
 };

@@ -2,20 +2,10 @@ const Todo = require('../models').Todo;
 
 module.exports = {
   create(req, res) {
-    return Todo
-      .create({
-        title: req.body.title,
-      })
-      .then(todo => res.status(201).send(todo))
-      .catch(error => res.status(400).send(error));
+    res.send({"title": "a todo"})
   },
   delete(req, res) {
-    return Todo
-      .destroy({
-        where: {}
-      })
-      .then(todo => res.status(201).send({}))
-      .catch(error => res.status(400).send(error));
+    res.send(200)
   },
 };
 console.log('todosController')

@@ -41,6 +41,9 @@ That's a later problem to fix.
 TODO:
 ☑ Get app responding to HTTP
 ☑ POST api successful and returns created object
+☐ DELETE 
+☐ GET: empty array
+etc
+
+FIX:
 ☒ BROKEN env files for database auth
-☐
-☐

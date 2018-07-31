@@ -9,5 +9,13 @@ module.exports = {
       .then(todo => res.status(201).send(todo))
       .catch(error => res.status(400).send(error));
   },
+  delete(req, res) {
+    return Todo
+      .destroy({
+        where: {}
+      })
+      .then(todo => res.status(201).send({}))
+      .catch(error => res.status(400).send(error));
+  },
 };
-console.log('todosController create')
+console.log('todosController')
